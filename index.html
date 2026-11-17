@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="The International Glass Plates Group connects people who care for and study astronomical glass plates."
+  >
+  <title>International Glass Plates Group</title>
+
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17243a;
+      --muted: #52627a;
+      --paper: #f7f8fb;
+      --white: #ffffff;
+      --accent: #315b8a;
+      --border: #e1e6ee;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--paper);
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .container {
+      width: min(100% - 2rem, 960px);
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--ink);
+      color: var(--white);
+      padding: 1rem 0;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--white);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #e0e9f5;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 5rem 0 4rem;
+      background:
+        radial-gradient(circle at 80% 20%, #5279a5 0, transparent 28%),
+        linear-gradient(135deg, #17243a, #294c73);
+      color: var(--white);
+    }
+
+    .hero h1 {
+      max-width: 760px;
+      margin: 0 0 1rem;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      line-height: 1.1;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: 0;
+      color: #e0e9f5;
+      font-size: 1.15rem;
+    }
+
+    main section {
+      padding: 3rem 0;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .card {
+      padding: 1.25rem;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .contact {
+      padding: 2rem;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    footer {
+      padding: 1.5rem 0;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#">International Glass Plates Group</a>
+
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#focus">Our focus</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Preserving the photographic record of the sky</h1>
+      <p>
+        The International Glass Plates Group brings together people who
+        preserve, study, digitize, and share historical astronomical glass plates.
+      </p>
+    </div>
+  </section>
+
+  <main>
+    <section id="about">
+      <div class="container">
+        <h2>About the group</h2>
+        <p class="muted">
+          Astronomical glass plates are historic records of the night sky.
+          The IGPG is an informal international network for people and
+          institutions interested in caring for these collections and making
+          them accessible for research and public engagement.
+        </p>
+      </div>
+    </section>
+
+    <section id="focus">
+      <div class="container">
+        <h2>Our focus</h2>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Preservation</h3>
+            <p class="muted">
+              Share approaches to caring for fragile plates and their
+              associated records.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Digitization</h3>
+            <p class="muted">
+              Exchange ideas about practical ways to scan, describe, and
+              provide access to collections.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Research and access</h3>
+            <p class="muted">
+              Support scientific, historical, and educational uses of
+              astronomical plate archives.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources">
+      <div class="container">
+        <h2>Learn more</h2>
+        <ul>
+          <li>
+            <a href="https://aas240-aas.ipostersessions.com/?s=91-28-C4-A9-AC-CE-7E-48-D6-2E-CA-BE-A5-25-DD-61">
+              The International Glass Plates Group: Resources for
+              Astronomical Plate Preservation</a>
+          </li>
+          <li>
+            <a href="https://platestacks.cfa.harvard.edu/">
+              About the Harvard Plate Stacks</a>
+          </li>          <li>
+            <a href="https://www.lib.uchicago.edu/collex/collections/yerkes-plates/about/">
+              About the Yerkes Glass Plate Collection</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact">
+          <h2>Get in touch</h2>
+          <p class="muted">
+            Interested in astronomical photographic plates?
+            Join us virtually the third Friday of the month at 10 AM US CT.
+          </p>
+          <a href="https://groups.google.com/u/2/g/igpg">
+            Sign up for our low-volume mailing list to get meeting invitations.
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      International Glass Plates Group
+    </div>
+  </footer>
+</body>
+</html>
